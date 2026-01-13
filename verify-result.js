@@ -1,4 +1,4 @@
- <script>
+
     
       
 /* Password Protection Script by www.onlineofferz.xyz*/
@@ -10,4 +10,4 @@ password = prompt(
 if (password != 'CHECK RESULT') {
   location.href = 'https://phivez.org/nssco-nsscas.html';
 }
-  </script>
+  
