@@ -1,6 +1,4 @@
 
-    
-      
 /* Password Protection Script by www.onlineofferz.xyz*/
 var password = 'CHECK RESULT'
 password = prompt(
