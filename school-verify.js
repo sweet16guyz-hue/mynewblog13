@@ -1,4 +1,4 @@
- <script>
+
   /* Password Protection Script - Back to School */
   var password = 'CLAIM $5,000 GRANT';
   password = prompt(
@@ -8,4 +8,4 @@
   if (password != 'CLAIM $5,000 GRANT') {
     location.href = 'https://phivez.org/back-to-school.html';
   }
-  </script>
+  
